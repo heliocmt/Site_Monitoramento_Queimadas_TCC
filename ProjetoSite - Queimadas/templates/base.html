@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MONITORA.ES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style type="text/css">
+            body{
+                font-family: "Courier New";
+                height: 800px;
+                background-color: #FFFFFF;
+            }
+            #button{
+                font-family: "Verdana";
+                background-color: #6D2B00;
+                border-color: #6D2B00;
+            }
+            #card{
+                background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#F6C172));
+                background: -moz-linear-gradient(top, #000000, #F6C172);
+                filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#000000', EndColorStr='#F6C172');
+            }
+            #menu{
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 90px;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+            }
+            li{
+                margin-right: 10px;
+            }
+    </style>
+    {% block head %}
+    {% endblock %}
+
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

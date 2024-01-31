@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <style> div.centralizar{text-align: center}</style>
+    <div class = "centralizar">
+         <head>
+             <meta charset="UTF-8">
+             <title>Upload file</title>
+         </head>
+         <body>
+         <form action="/upload" enctype="multipart/form-data" method= "post">
+             <p>
+                 <input type="file" name="arquivo" id="arquivo">
+             </p>
+             <p>
+                <button class="btn btn-danger" type="submit">Enviar</button>
+             </p>
+        </form>
+        </body>
+    </div>
+{% endblock %}

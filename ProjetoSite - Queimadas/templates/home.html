@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <style> div.centralizar{text-align: center}</style>
+    <div class = "centralizar">
+    <div class = "card" id="card">
+        <div class = "card-body">
+        <div class="row align-items-center">
+            <div class="col">
+                <p><h1><br><strong><font color="white">Monitoramento de Foco de Queimadas via Satélites</br></h1></p></strong>
+                <h5>(Dados das últimas 48 horas)</h5></font>
+                <button class="btn btn-primary" id="button" href="http://terrabrasilis.dpi.inpe.br/queimadas/situacao-atual/estatisticas/estatisticas_estados/" role="button">Acesse os dados!</button>
+            </div>
+            <div class="col">
+                <iframe class="map", src="/mapa" width="600" height="600"></iframe>
+                <h3><b style="background-color: lightcoral; color: lightcyan;"></b></h3>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}
